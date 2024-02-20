@@ -33,7 +33,7 @@ void selection_sort(int *array, size_t size)
 		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[idx_min])
-			{	
+			{
 				idx_min = j;
 			}
 		}
