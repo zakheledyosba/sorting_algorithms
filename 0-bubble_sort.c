@@ -25,7 +25,7 @@ void swap(int *f, int *s)
 
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j, l;
+	size_t i, j;
 
 	if (array == NULL || size == 0)
 	{
@@ -42,7 +42,7 @@ void bubble_sort(int *array, size_t size)
 				swap(&array[j], &array[j + 1]);
 				printf("After swap: ");
 
-				for (l = 0; l < size; l++)
+				for (size_t l = 0; l < size; l++)
 				{
 					printf("%d ", array[l]);
 				}
